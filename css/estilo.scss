@@ -1,0 +1,1252 @@
+@import "conejo";
+@import "bourbon/bourbon";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700,300);
+$opensans:'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$celeste:#448AFF;
+$blanco:#fff;
+$plomo:#4E4E4E;
+$verde: #b2dd4c;
+$rojo:#f44336;
+$plomo-fondo:#F5F5F5;
+html{
+  font-family: $opensans;
+  height: 100%;
+}
+/*===============================
+=========== STAR RECURSOS =======
+===============================*/
+#nombre-error{
+ font-size: 30px;
+}
+.botones-menu{
+  margin:16px 0px;
+  a{
+    &:hover{
+      color:$plomo!important;
+    }
+  }
+  &:hover{
+    box-shadow: inset 0 -2px 0 0 $blanco;
+    background: $blanco!important;
+  }
+}
+.subtitulos{
+  font-size: 26px;
+  color: $plomo;
+  font-weight: 300;
+  font-family: $roboto;
+}
+.primera-sus{
+  h4{
+    font-size: 23px;
+    font-weight: 600;
+  }
+}
+.contenido-desplegable{
+  li{
+   &:hover{
+     box-shadow: inset 0 -2px 0 0 transparent !important;
+   }
+    a{
+      &:hover{
+        color:#6D6D6D !important;
+      }
+    }
+  }
+}
+.banner-icono{
+  img{
+    width: 100px;
+  }
+  h3{
+    font-family: $opensans;
+    font-weight: 900;
+  }
+  p{
+    font-family: $roboto;
+    font-weight: 200;
+    font-size: 26px;
+  }
+}
+.demas-cursos{
+  font-size: 25px;
+  font-weight: 500;
+  color:#5D5D5D;
+  font-family: "Roboto";
+}
+.curso-todo{
+  padding: 100px 0;
+  h2{
+    font-size: 40px;
+    font-weight: 200;
+    color:#5D5D5D;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+}
+.right-nav{
+  float: right;
+  margin-left: 40px;
+}
+.free{
+  background:$verde;
+}
+.compra{
+  background: $rojo;
+}
+.miga-negra{
+  background: #1a1a1a;
+}
+.migas{
+  .migas-pan{
+    li{
+      display: inline-block;
+      padding-left: 10px;
+      color: #7B7B7B;
+      a{
+        font-size: 15px;
+        color: #7B7B7B;
+      }
+    }
+  }
+}
+.label-info{
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 5px rgba(82, 82, 82, 0.5);
+  padding: 4px 17px;
+}
+.titulo-banner{
+  font-family: $roboto;
+  font-size: 3.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.subtitulo-banner{
+  font-size: 2em;
+  font-weight: 300;
+  text-shadow: 0px 0px 16px black;
+  margin-top: 0px;
+  font-family: $roboto;
+}
+.busqueda{
+  font-size: 30px;
+  color: #03A9F4;
+  position: absolute;
+  top: 0px;
+  right: 45px;
+  margin-top: 0;
+}
+.boton-busqueda{
+  border: none;
+  background: transparent;
+  &:focus{
+    background: transparent;
+  }
+}
+
+.busqueda-expander{
+  padding: 15em 2em 5em !important;
+  text-align: center;
+  .blanco-imput{
+    border-bottom: 1px solid $blanco !important;
+    color: $blanco;
+    height: 4rem !important;
+    font-size: 3rem !important;
+    &:focus{
+      border-bottom: 1px solid $blanco !important;
+      box-shadow: 0 1px 0 0 $blanco !important;
+    }
+    &:valid{
+      border-bottom: 1px solid $blanco !important;
+      box-shadow: 0 1px 0 0 $blanco !important;
+    }
+  }
+  h2{
+    color: $blanco;
+  }
+}
+/*===============================
+=========== END RECURSOS =======
+===============================*/
+
+/*===============================
+========= STAR CURSO ============
+===============================*/
+.cursostutosblog{
+  background: $plomo-fondo;
+  padding: 0px 0px 28px 0px;
+  .contenido-tab{
+    background: #fafafa;
+    margin-top:-40px;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+.titulo-fecha{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  bottom: 0;
+  background: linear-gradient(0deg,rgba(0,0,0,.35) 10%,rgba(0,0,0,0) 90%);
+  font-size: 13px;
+  color: #fff;
+  padding: 15px 20px;
+  .fecha{
+    font-size: 15px;
+  }
+}
+
+/*===============================
+========= STAR PRECIO ===========
+===============================*/
+#precio{
+  background:$blanco;
+  padding: 25px;
+  box-shadow: 4px 4px 22px rgba(107, 107, 107, 0.29);
+  h1{
+      font-size: 50px;
+      font-weight: 100;
+      font-family: $roboto;
+      color: $plomo;
+   }
+  p{
+    margin-top: -20px;
+    padding-bottom: 35px;
+    color: $plomo;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  .nomprecios{
+    text-align: center;
+    color: $blanco;
+    padding:12px 4px 26px;
+    h2{
+      font-size: 111px;
+      font-family: $roboto;
+    }
+    a{
+      color: $blanco;
+      font-weight: 500;
+      border-radius: 2px;
+      border: 1px solid white;
+      padding: 5px 21px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+  }
+  .precio-lista{
+    margin: -20px;
+    background: $blanco;
+    font-family: $roboto;
+    li{
+      padding: 16px 22px;
+      border-bottom: 1px solid rgba(210, 210, 210, 0.66);
+      i{
+        color: $verde;
+      }
+    }
+  }
+  .ver-info{
+    background: $rojo;
+  }
+}
+/*===============================
+========= END PRECIO ============
+===============================*/
+
+/*===============================
+======== STAR PLATAFORMA ========
+===============================*/
+#plataformas{
+  padding: 25px 0px;
+  background: $plomo-fondo;
+  -webkit-box-shadow: inset 4px 4px 22px rgba(107, 107, 107, 0.28);
+  box-shadow: inset 4px 4px 22px rgba(107, 107, 107, 0.28);
+  h1{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: $roboto;
+    color: $plomo;
+  }
+  p{
+    margin-top: -20px;
+    padding-bottom: 35px;
+    color: $plomo;
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+/*===============================
+======== END PLATAFORMA ========
+===============================*/
+
+/*===============================
+======== STAR TESTIMNIO ========
+===============================*/
+#testimonios{
+  background: url("../img/testimonios.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 530px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 113px 0px 70px 0px;
+
+}
+.owl-demo{
+  .item{
+    margin: 20px;
+    .testimonio-texto{
+      background: $blanco;
+      padding: 13px 30px;
+      color:$plomo;
+      font-family: $roboto;
+      margin-bottom: 30px;
+    }
+    .Testimonies-triangle{
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $blanco;
+      text-align: center;
+      margin: 0 auto;
+      top: -30px;
+      position: relative;
+    }
+    .testimonio-user{
+      text-align: center;
+      .carousel-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+        display: inline-block;
+        background-image: url("../img/testimonios/1.png");
+      }
+      .user-name{
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 20px;
+        position: relative;
+        .calificacion{
+          color:$celeste;
+        }
+        .name{
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 0;
+          margin-top: 12px;
+        }
+        .carousel-position{
+          display: inline-block;
+          padding: 1px 8px;
+          border-radius: 3px;
+          font-size: 12px;
+          margin-top: 3px;
+          background: $blanco;
+          a{
+            color: $celeste;
+          }
+        }
+      }
+    }
+  }
+}
+/*===============================
+======== END TESTIMNIO ==========
+===============================*/
+
+/*===============================
+========= STAR  FOOTER ==========
+===============================*/
+footer{
+  background:#f9f9f9;
+  padding: 60px 0px 40px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+  .block-title{
+    display: inline-block;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0px 10px;
+    color:$plomo;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 49px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    font-weight: 500;
+  }
+  .block-content{
+    line-height: 28px;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .enlaces{
+    li {
+      a{
+        font-size:14px;
+        padding: 2px;
+        color: $plomo;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+       /* &:before{
+          content: '';
+          width: 0;
+          position: absolute;
+          height: 2px;
+          background: #9E9E9E;
+          transition: 0.3s;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:hover:before {
+          width: 100%;
+        }*/
+        &:hover{
+          color:lighten($plomo,20%);
+        }
+      }
+    }
+  }
+  .block{
+    margin-top: 50px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .redes-sociales{
+    li{
+      display: inline-block;
+      a{
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-image: url("../img/iconos.png");
+        margin: 0px 3px;
+      }
+      #facebook{
+        background-position: 12px 2px;
+        &:hover{
+          background-position: 12px 64px;
+        }
+      }
+      #twitter{
+        background-position: -22px 2px;
+        &:hover{
+          background-position: -22px 64px;
+        }
+      }
+      #google-plus{
+        background-position: -60px 2px;
+        &:hover{
+          background-position: -60px 64px;
+        }
+      }
+      #youtube{
+        background-position: -98px 2px;
+        &:hover{
+          background-position: -98px 64px;
+        }
+      }
+    }
+  }
+}
+.pagos{
+  li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    .iconos{
+      background-image: url("../img/iconos.png");
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      display: inline-block;
+      height: 16px;
+    }
+    .visa{
+      background-position:0px -76px;
+      width: 42px;
+    }
+    .mastercard{
+      background-position:-60px -76px;
+      width: 25px;
+    }
+    .express{
+      background-position: -108px -76px;
+      width: 45px;
+    }
+    .paypal{
+      background-position: -161px -76px;
+      width: 56px;
+    }
+  }
+}
+/*===============================
+========= END   FOOTER ==========
+===============================*/
+
+/*===============================
+========= STAR PROFESORES =======
+===============================*/
+.equipo-banner{
+  background: url("../img/banners/equipo-banner.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 100px 0px;
+}
+.aprender-equipo{
+  padding: 80px 0px;
+  h2{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: $roboto;
+    color: $plomo;
+  }
+  .subtitulo{
+    margin-top: -20px;
+    padding-bottom: 35px;
+    color: $plomo;
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+.contenido-profesores{
+  background: $blanco;
+  padding: 80px 0px;
+  h2{
+    font-size: 45px;
+    font-weight: 300;
+    font-family: $roboto;
+    color: $plomo;
+    margin-bottom: 7px;
+  }
+  .texto-profesores{
+    color: #4E4E4E;
+    font-size: 21px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 14px;
+  }
+  p{
+    font-size: 16px;
+    text-align: center;
+    color: $plomo;
+    font-family: $roboto;
+  }
+}
+.profesores{
+  background: $blanco;
+  padding: 60px 0px;
+  h2{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: $roboto;
+    color: $plomo;
+  }
+  p{
+    margin-top: -20px;
+    padding-bottom: 60px;
+    color: $plomo;
+    font-size: 21px;
+    font-weight: 300;
+  }
+  .team-member{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.26);
+    margin-bottom: 30px;
+    &:hover .member-info{
+      top: 0;
+      margin-top: 0;
+    }
+    .member-img{
+      padding-bottom: 78px;
+    }
+    .member-info{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 100%;
+      margin-top: -80px;
+      background-color: #fff;
+      padding: 16px 20px;
+      -webkit-transition: height,.5s;
+      transition: height,.5s;
+      .title-four{
+        margin: 0;
+        font-weight: 700;
+        font-family: $roboto;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: .6px;
+      }
+      .member-role{
+        font-size: 12px;
+      }
+      .member-toggle{
+        margin-top: 17px;
+        .redes-profesores{
+          a{
+            display: inline-block;
+            width: 37px;
+            height: 37px;
+            background-color: #E4E4E4;
+            border-radius: 50%;
+            i{
+              line-height: 37px;
+              color: #6c6c6c;
+              font-size: 14px;
+              width: 37px;
+              height: 37px;
+              border-radius: 50%;
+              text-align: center;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              transition: all 0.2s linear;
+              &:hover{
+                color: $blanco;
+              }
+            }
+          }
+          #facebook{
+              &:hover{
+                background:#415E9B;
+              }
+          }
+          #twitter{
+            &:hover{
+              background:#1DA1F2;
+            }
+          }
+          #google-plus{
+            &:hover{
+              background:#DB4437;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+/*===============================
+======== END PROFESORES =========
+===============================*/
+
+/*===============================
+======== STAR DESARROLLO ========
+===============================*/
+.desarrollo-banner{
+  background: url("../img/banners/desarrollo-banner.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 100px 0px;
+}
+.desarrollo{
+  padding:0px 0px 80px;
+  .col-nopadding{
+    padding: 0 !important;
+    border-left: 1px solid $blanco;
+    .table-left-menu{
+      p{
+        font-size: 13px;
+        padding-left: 16px;
+        border-bottom: 1px solid $blanco;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    .table-header-price{
+      padding: 15px 0;
+      background-color: $celeste;
+      height: 82px;
+    }
+    .border-bottom{
+      border-bottom: 1px solid $blanco;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .mdi-action-done{
+        color: #25C51A;
+      }
+      .mdi-navigation-close{
+        color: $rojo;
+      }
+    }
+  }
+}
+.desarrollo-contenido{
+  padding:100px 0px;
+  h2{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: $roboto;
+    color: $plomo;
+  }
+
+  .contenido-desarrollo{
+    margin-top: -30px;
+    h3{
+      font-size: 40px;
+      font-weight: 300;
+      font-family: $roboto;
+      color: $plomo;
+    }
+    ul{
+      li{
+        padding:8px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .circulo-grande{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    line-height: 0;
+    .circulo-pequenio{
+      display: inline-block;
+      position: absolute;
+      right: 50px;
+      span{
+        background-color: $verde;
+        width: 82px;
+        height: 82px;
+        display: inline-block;
+        text-align: center;
+        line-height: 82px;
+        i{
+          font-size: 32px;
+          color: $blanco;
+          margin-top:25px;
+        }
+      }
+    }
+  }
+}
+/*===============================
+======== END DESARROLLO =========
+===============================*/
+
+/*===============================
+========= STAR SUSCRIBIRSE ======
+===============================*/
+.suscribirse{
+  height: 120px;
+  width: 100%;
+  display: table;
+  form{
+    padding: 13px 0px;
+  }
+}
+
+/*===============================
+========= END SUSCRIBIRSE =======
+===============================*/
+
+/*===============================
+======== STAR CONTACTO  =========
+===============================*/
+.contacto-banner{
+  background: url("../img/banners/contacto--banner.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 100px 0px;
+}
+.contacto{
+  /*position: relative;
+  display: block;
+  overflow: hidden;
+  &:after {
+    background-color:#F8F8F8;
+    border-right: 1px solid #ededed;
+    position: absolute;
+    content: "";
+    width: 50%;
+    z-index: -1;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }*/
+  .section-common-space{
+    margin-top: -6px;
+    padding: 50px 70px 50px 0px;
+    .title-sec{
+      font-size: 30px;
+      font-weight: 400;
+      font-family: $roboto;
+      color: $plomo;
+    }
+    .contact-info{
+      .ci-items{
+        margin-bottom: 23px;
+        .ci-icons{
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          background-color: #fff;
+          display: inline-block;
+          border-radius: 50%;
+          color: $celeste;
+          float: left;
+          margin-right: 20px;
+          text-align: center;
+          box-shadow: 0 1px 4px 0 rgba(0,0,0,.24);
+        }
+        h6{
+          font-family:$roboto;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 2.7;
+          overflow: hidden;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+  .formulario{
+    height: 440px;
+    padding: 50px;
+  }
+}
+
+
+/*===============================
+========= END CONTACTO ==========
+===============================*/
+
+/*===============================
+========= STAR CURSO ===========
+===============================*/
+.curso-banner{
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  padding: 100px 0px;
+}
+.curso-icono{
+  padding: 70px 0px;
+  background: $plomo-fondo;
+  h2{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    color: #4E4E4E;
+  }
+  .contenido-icono{
+    padding: 24px 0px;
+    p{
+      font-size: 23px;
+      color: $plomo;
+      margin-top: 5px;
+      font-weight: 300;
+      font-family: $roboto;
+    }
+    img{
+      width: 140px !important;
+    }
+  }
+}
+.curso{
+  padding: 60px 0px;
+  background: $blanco;
+  h2{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    color: #4E4E4E;
+    margin-bottom: 50px;
+  }
+
+}
+/*===============================
+========= END CURSO ===========
+===============================*/
+
+/*===============================
+===== STAR CURSO-DETALLE ========
+===============================*/
+.curso-detalle{
+  padding: 30px 0px;
+  margin-top: 10px;
+  background: $blanco;
+  .icono{
+    width: 100%;
+    height: 140px;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .texto-curso-grande{
+    margin-top:-21px;
+    h1{
+      color: $plomo;
+      font-size: 32px;
+      font-weight: 600;
+      margin: 22px 0px 18px;
+    }
+    p{
+      margin-top: -13px;
+      font-size: 18px;
+      color: grey;
+      font-weight: 200;
+      margin-bottom: 14px;    
+    }
+  }
+  .texto-detalle{
+    h1{
+      color: $plomo;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    p{
+      margin-top: -21px;
+      font-size: 16px;
+      color: grey;
+      font-weight: 200;
+    }
+    ul{
+      margin-left: -21px;
+      margin-right: -20px;
+      li{
+        padding: 12px 29px;
+        font-size: 14px;
+        color:#909090;
+        border-bottom: 1px solid #E0E0E0;
+        box-shadow: inset -0px -1px white;
+        i{
+          margin-right: 26px;
+          font-size: 16px;
+          color: #676767;
+        }
+        a{
+          color: #909090;
+        }
+      }
+    }
+  }
+
+  .detalle-boton{
+    text-align: center;
+    width: 100%;
+    a{
+      width: 100%;
+    }
+  }
+  .caracteristicas{
+    ul{
+      li{
+        padding: 3px 0px;
+
+      }
+    }
+  }
+}
+.curso-detalle-1{
+  background: $plomo-fondo;
+  padding: 0px 0px 10px 0px;
+  .contenido-tab{
+    background: #fff;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  .test1{
+    padding: 0px 50px;
+  }
+  .video-lista{
+    box-shadow: 1px 1px 8px rgba(101, 101, 101, 0.15);
+    .cabecera{
+      h5{
+        font-family: $roboto;
+      }
+      &:hover{
+        background: $blanco;
+      }
+    }
+    li{
+      &:hover{
+        background:#F7F7F9;
+      }
+      .item-video{
+        width: 100%;
+        font-size: 13px;
+        display: block;
+        color: #333;
+        .candado{
+          color: #cdcdcd;
+          font-size: 18px;
+          margin-right: 3px;
+        }
+        .play{
+          color: $celeste;
+          font-size: 18px;
+          margin-right: 3px;
+        }
+      }
+      span{
+        position: absolute;
+        right: 25px;
+        margin-top: -22px;
+        font-size: 13px;
+      }
+    }
+  }
+  .categoria{
+    h2{
+      font-size: 17px;
+    }
+    img{
+      width: 100px;
+      margin: 10px 0px;
+    }
+    span{
+      margin-top: 50px;
+      display: inline-block;
+      margin-left: -12px;
+      font-size: 16px;
+    }
+  }
+
+  .cad-contenido{
+    .descripcion-cad{
+      padding: 14px;
+      h5{
+        font-weight: 100;
+        font-size: 14px;
+        margin-top: 0;
+      }
+      h4{
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 0;
+        a{
+          font-size: 32px;
+          color: $plomo;
+        }
+      }
+      p{
+        font-family: $roboto;
+        font-weight: 300;
+      }
+    }
+    .imagen-cad{
+      margin-bottom: -4px;
+    }
+  }
+  #owl-demo1 {
+    .item {
+      margin: 20px;
+    }
+  }
+  .comentario{
+    span{
+      font-size: 13px;
+    }
+  }
+}
+.redacta-comentario{
+  h2{
+    font-size: 15px;
+    font-family: $roboto;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+/*===============================
+======= END CURSO-DETALLE =======
+===============================*/
+
+/*===============================
+======== STAR VER CURSOS ========
+===============================*/
+.ver-curso{
+  .video-ver-curso{
+    padding: 60px;
+    background:#312F30;
+    .flecha-derecha{
+        background: rgb(47, 47, 47);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+        color: #C5C5C5;
+        width: 2em;
+        line-height: 2.5;
+        padding: 0 1.5em;
+        display: inline-block;
+        height: 5em;
+        position: absolute;
+        top: 60%;
+        z-index: 1;
+        cursor: pointer;
+        left: 156px;
+      i{
+        position: relative;
+        top: 23px;
+        display: inline-block;
+        left: -12px;
+      }
+      &:hover{
+        background: #3A3A3A;
+        color: #fff;
+      }
+    }
+    .flecha-izquierda{
+      background: rgba(47, 47, 47, 0.92);
+      color: #C5C5C5;
+      width: 2em;
+      cursor: pointer;
+      line-height: 2.5;
+      padding: 0 1.5em;
+      display: inline-block;
+      height: 5em;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+      position: absolute;
+      top: 60%;
+      z-index: 1;
+      right: 156px;
+      i{
+        position: relative;
+        top: 23px;
+        display: inline-block;
+        left: -12px;
+
+      }
+      &:hover{
+          background: #3A3A3A;
+          color: #fff;
+      }
+    }
+  }
+}
+/*===============================
+========= END VER CURSOS ========
+===============================*/
+/*===============================
+======== STAR TUTORIALES ========
+===============================*/
+.tutoriales-banner{
+  background: url("../img/banners/tuto-banner.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 100px 0px;
+}
+.tutoriales{
+  padding: 60px 0px;
+  .tuto-titu{
+    font-size: 30px;
+    font-family: $roboto;
+    font-weight: 300;
+    color: $plomo;
+    margin-bottom: 23px;
+  }
+  .etiquetas{
+    li{
+      display: inline-block;
+      margin:7px 2px;
+      a{
+        background:$celeste;
+        color: $blanco;
+        padding:5px 12px;
+        border-radius: 13px;
+      }
+    }
+  }
+}
+/*===============================
+========= END TUTORIALES ========
+===============================*/
+
+/*===============================
+========= END TUTORIALES ========
+===============================*/
+.faq-banner{
+  background: url("../img/banners/faq-banner.jpg") 0 no-repeat fixed;
+  margin: 0px auto;
+  max-width: 1920px;
+  min-height: 300px;
+  position: relative;
+  color:$blanco;
+  width: 100%;
+  background-size:cover;
+  padding: 100px 0px;
+}
+  .faq{
+    padding: 80px 0px;
+    .collapsible-header{
+      h6{
+        font-weight: 300;
+        line-height: 2.5em;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0.65rem 0 .52rem;
+      }
+      i{
+        padding: 0.65rem 0 .52rem;
+      }
+    }
+    h2{
+      font-size: 50px;
+      font-family: $roboto;
+      font-weight: 200;
+      color: $plomo;
+      margin-bottom: 23px;
+    }
+    .collapsible-body{
+      background: $blanco !important;
+    }
+  }
+/*===============================
+========= END TUTORIALES ========
+===============================*/
+
+/*===============================
+======= STAR MEDIAS QUERIES =====
+===============================*/
+@media (max-width: 600px) {
+
+}
+
+
+
+/*===============================
+======= END MEDIAS QUERIES =====
+===============================*/
