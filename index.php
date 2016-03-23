@@ -10,6 +10,23 @@
 <body>
     <main>
         <?php include "php/menu.php"?>
+        <nav class="light-green">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-wrapper">
+                        <div class="col l2">
+                            <p>Curso en vivo</p>
+                        </div>
+                        <div class="col l10">
+                            <a href="registro.php" class="btn waves-effect waves-light light-blue">
+                               Crea tu cuenta gratis
+                            </a>
+                        </div>
+                        <i class="material-icons">close</i>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <?php include "php/slider.php"?>
         <!--star Tutos y Cursos-->
         <section class="cursostutosblog">
